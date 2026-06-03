@@ -11,7 +11,8 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/favicon.ico' }
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    { rel: 'icon', type: 'image/png', href: '/favicon.png', sizes: '32x32' }
   ],
   htmlAttrs: {
     lang: 'en'
@@ -29,7 +30,10 @@ provide('navigation', navigation)
 
 <template>
   <UApp>
-    <NuxtLoadingIndicator />
+    <NuxtLoadingIndicator
+      :height="2"
+      color="linear-gradient(to right, var(--color-pink-400) 0%, var(--color-sapphire-400) 100%)"
+    />
 
     <AppHeader />
 

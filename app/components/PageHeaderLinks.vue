@@ -27,12 +27,6 @@ const items = [
     to: `/raw${route.path}.md`
   },
   {
-    label: 'Open in ChatGPT',
-    icon: 'i-simple-icons:openai',
-    target: '_blank',
-    to: `https://chatgpt.com/?hints=search&q=${encodeURIComponent(`Read ${mdPath.value} so I can ask questions about it.`)}`
-  },
-  {
     label: 'Open in Claude',
     icon: 'i-simple-icons:anthropic',
     target: '_blank',

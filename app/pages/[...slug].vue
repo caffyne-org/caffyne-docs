@@ -10,13 +10,18 @@ const route = useRoute()
 const { toc } = useAppConfig()
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation')
 
-const { data: page } = await useAsyncData(route.path, () => queryCollection('docs').path(route.path).first())
+const path = computed(() => route.path.replace(/\/$/, '') || '/')
+
+const { data: page } = await useAsyncData(path.value, () =>
+  queryCollection('docs').path(path.value).first()
+)
+
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
 
-const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
-  return queryCollectionItemSurroundings('docs', route.path, {
+const { data: surround } = await useAsyncData(`${path.value}-surround`, () => {
+  return queryCollectionItemSurroundings('docs', path.value, {
     fields: ['description']
   })
 })
@@ -47,7 +52,6 @@ const links = computed(() => {
       target: '_blank'
     })
   }
-
   return [...links, ...(toc?.bottom?.links || [])].filter(Boolean)
 })
 </script>
@@ -65,7 +69,6 @@ const links = computed(() => {
           :key="index"
           v-bind="link"
         />
-
         <PageHeaderLinks />
       </template>
     </UPageHeader>
@@ -75,9 +78,7 @@ const links = computed(() => {
         v-if="page"
         :value="page"
       />
-
       <USeparator v-if="surround?.length" />
-
       <UContentSurround :surround="surround" />
     </UPageBody>
 
@@ -95,13 +96,12 @@ const links = computed(() => {
         >
           <div
             class="hidden lg:block space-y-6"
-            :class="{ '!mt-6': page.body?.toc?.links?.length }"
+            :class="{ 'mt-6!': page.body?.toc?.links?.length }"
           >
             <USeparator
               v-if="page.body?.toc?.links?.length"
               type="dashed"
             />
-
             <UPageLinks
               :title="toc.bottom.title"
               :links="links"

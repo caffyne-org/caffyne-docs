@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   ],
 
   devtools: {
-    enabled: true
+    enabled: false
   },
 
   css: ['~/assets/css/main.css'],
@@ -19,6 +19,9 @@ export default defineNuxtConfig({
   content: {
     build: {
       markdown: {
+        highlight: {
+          theme: 'catppuccin-mocha'
+        },
         toc: {
           searchDepth: 1
         }
@@ -34,11 +37,11 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      ignore: ['/llms-full.txt'],
       routes: [
         '/'
       ],
-      crawlLinks: true,
-      autoSubfolderIndex: false
+      crawlLinks: true
     }
   },
 
