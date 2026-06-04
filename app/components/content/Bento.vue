@@ -2,13 +2,13 @@
 const largeFeature1 = {
   title: '300+ color themes',
   desc: 'Apply one of our default schemes and generate more from wallpaper or Base16 color palettes with help from our theme machine.',
-  img: '/landing03.jpg'
+  img: '/landing03.webp'
 }
 
 const mediumFeature = {
   title: 'Applet groups',
   desc: 'Pair applets to groups and create unique and practical combinations.',
-  img: '/landing02.jpg'
+  img: '/landing02.webp'
 }
 
 const smallFeatures = [
@@ -25,7 +25,7 @@ const smallFeatures = [
 const largeFeature2 = {
   title: 'Drag & drop bar configuration',
   desc: 'Editing your bars and applets feels as intuitive as dragging a file into a folder. Be in control over your most favorite layouts.',
-  img: '/landing01.jpg'
+  img: '/landing01.webp'
 }
 </script>
 

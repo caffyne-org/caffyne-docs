@@ -49,17 +49,17 @@ onUnmounted(() => {
       :style="{ transform: topTransform }"
     >
       <img
-        src="/top.png"
+        src="/top.webp"
         alt="Top Layer"
         class="carousel-img"
       >
       <img
-        src="/top.png"
+        src="/top.webp"
         alt="Top Layer Duplicate"
         class="carousel-img"
       >
       <img
-        src="/top.png"
+        src="/top.webp"
         alt="Top Layer Duplicate"
         class="carousel-img"
       >
@@ -71,17 +71,17 @@ onUnmounted(() => {
       :style="{ transform: bottomTransform }"
     >
       <img
-        src="/bottom.png"
+        src="/bottom.webp"
         alt="Bottom Layer"
         class="carousel-img"
       >
       <img
-        src="/bottom.png"
+        src="/bottom.webp"
         alt="Bottom Layer Duplicate"
         class="carousel-img"
       >
       <img
-        src="/bottom.png"
+        src="/bottom.webp"
         alt="Bottom Layer Duplicate"
         class="carousel-img"
       >

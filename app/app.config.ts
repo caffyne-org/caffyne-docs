@@ -17,7 +17,7 @@ export default defineAppConfig({
         left: 'text-sm text-muted'
       }
     }
-  }, // <-- HIER wurde das ui-Objekt korrekt geschlossen!
+  },
 
   seo: {
     siteName: 'caffyne'

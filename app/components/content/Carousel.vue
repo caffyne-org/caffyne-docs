@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const items = [
-  '/screen1.png',
-  '/screen2.png',
-  '/screen3.jpg',
-  '/screen1.png',
-  '/screen2.png',
-  '/screen3.jpg'
+  '/screen01.webp',
+  '/screen02.webp',
+  '/screen03.webp',
+  '/screen01.webp',
+  '/screen02.webp',
+  '/screen03.webp'
 ]
 </script>
 

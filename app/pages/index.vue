@@ -21,7 +21,7 @@ useSeoMeta({
       >
         <div
           class="fixed inset-0 pointer-events-none bg-center bg-cover"
-          style="background-image: url('/cat-waves.jpg')"
+          style="background-image: url('/cat-waves.webp')"
         />
       </div>
       <HeroBackground />
@@ -52,8 +52,8 @@ useSeoMeta({
         </div>
         <div class="w-full max-w-6xl mt-6 lg:mt-12 px-4">
           <UColorModeImage
-            light="/landing04.jpg"
-            dark="/landing04.jpg"
+            light="/landing04.webp"
+            dark="/landing04.webp"
             class="rounded-2xl w-full"
           />
         </div>
@@ -152,7 +152,7 @@ useSeoMeta({
       >
         <div
           class="fixed inset-0 pointer-events-none bg-center bg-cover"
-          style="background-image: url('/cat-waves.jpg')"
+          style="background-image: url('/cat-waves.webp')"
         />
       </div>
       <UContainer class="max-w-6xl px-0 text-center relative z-10">
