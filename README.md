@@ -1,8 +1,8 @@
-# caffyne shell docs
+# caffyne-shell docs
 
-Website & Documentation for [caffyne shell](https://caffyne.org).
+Website & Documentation for [caffyne-shell](https://caffyne.org).
 
-- [caffyne-shell git](https://caffyne-org/caffyne-shell)
+- [caffyne-shell repo](https://caffyne-org/caffyne-shell)
 
 <a href="https://caffyne.org" target="_blank">
   <picture>
