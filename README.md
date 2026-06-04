@@ -1,6 +1,6 @@
 # caffyne-shell docs
 
-Website & Documentation for [caffyne-shell](https://caffyne.org).
+Website & documentation for [caffyne-shell](https://caffyne.org).
 
 - [caffyne-shell repo](https://caffyne-org/caffyne-shell)
 
