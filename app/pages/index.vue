@@ -51,10 +51,10 @@ useSeoMeta({
           </UButton>
         </div>
         <div class="w-full max-w-6xl mt-6 lg:mt-12 px-4">
-          <UColorModeImage
-            light="/landing04.webp"
-            dark="/landing04.webp"
+          <img
+            src="/hero.gif"
             class="rounded-2xl w-full"
+            style="filter: saturate(1.2) brightness(1.0) contrast(1.1);"
           />
         </div>
       </UContainer>

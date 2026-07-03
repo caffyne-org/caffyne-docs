@@ -1,13 +1,13 @@
 <script setup lang="ts">
 const items = [
-  '/screen02.webp',
-  '/screen04.webp',
-  '/screen05.webp',
   '/screen01.webp',
   '/screen02.webp',
+  '/screen03.webp',
   '/screen04.webp',
   '/screen05.webp',
-  '/screen01.webp'
+  '/screen06.webp',
+  '/screen07.webp',
+  '/screen08.webp'
 ]
 </script>
 

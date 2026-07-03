@@ -36,7 +36,7 @@ export default defineAppConfig({
     links: [
       {
         'icon': 'i-simple-icons-discord',
-        'to': 'https://discord.gg/df4TzXx8V',
+        'to': 'https://discord.gg/umtB24kc8Y',
         'target': '_blank',
         'aria-label': 'Discord'
       },
@@ -59,7 +59,7 @@ export default defineAppConfig({
       },
       {
         'icon': 'i-simple-icons-discord',
-        'to': 'https://discord.gg/df4TzXx8V',
+        'to': 'https://discord.gg/umtB24kc8Y',
         'target': '_blank',
         'aria-label': 'Nuxt on Discord'
       },
@@ -87,7 +87,7 @@ export default defineAppConfig({
         {
           icon: 'i-lucide-message-circle-question-mark',
           label: 'Chat on Discord',
-          to: 'https://discord.gg/df4TzXx8V',
+          to: 'https://discord.gg/umtB24kc8Y',
           target: '_blank'
         }
       ]
